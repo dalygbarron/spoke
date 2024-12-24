@@ -1,0 +1,13 @@
+So we need to have interconnected rooms that the player can traverse via words
+like "walk north" etc. These rooms describe themselves when you first enter them
+and then from that point you simply have a name.
+
+We have agents which are things that can be interacted with, and can also move
+from room to room and do stuff on their own somewhat. A given room only has
+capacity for a certain number of hostile agents, but if a room is full up of
+hostiles and then a non hostile agent in the room also turns hostile then that
+is ok.
+
+The whole thing is based on timer based turns, so depending on how long an
+action takes, other agents can then take actions. The way that we will implement
+this in practice is that we have a list of 
